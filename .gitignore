@@ -1,2 +1,4 @@
 part1/nodejs/recipes-app/dist/*
 part1/nodejs/recipes-app/node_modules/*
+part3/nodejs/star/dist/*
+part3/nodejs/star/node_modules/*

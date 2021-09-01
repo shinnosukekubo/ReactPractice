@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" >
+    </script>
+    <script type="text/babel">
+      function Cat({name}) {
+        return (
+          <>
+          <h1>The cat's name is {name}</h1>
+          <p>He's good</p>
+          </>
+        );
+      }
+      ReactDOM.render(
+        <Cat name="AAA"/>, 
+        document.getElementById("root"));
+      // const data = [
+      //   {
+      //     name: "Naked Salmon",
+      //     ingredients: [
+      //       { name: "Salmon", amont: 1, measurement: "1 lb" },
+            
+      //     ],
+      //     steps: [
+      //       "AAA"
+      //     ]
+      //   },
+      //   {
+      //     name: "Fish",
+      //     ingredients: [
+      //     { name: "BBB", amont: 2, measurement: "1 lb" },
+      //     ],
+      //     steps: [
+      //       "CCC"
+      //     ]
+      //   }
+      // ];
+      // function Menu({title, recipes})
+      // {
+      //   return (
+      //     <article>
+      //       <header>
+      //         <h1>{title}</h1>
+      //       </header>
+      //       <div className="recipes">
+      //         {
+      //           recipes.map((recipe, i) => (
+      //             <Recipe key={i} {...recipe} />
+      //           ))}
+      //       </div>
+      //     </article>
+      //   )};
+      // const Recipe = ({ name, ingredients, steps }) => (
+      //     <section id={name.toLowerCase().replace(/ /g, "-")}>
+      //       <h1>{name}</h1>
+      //       <ul className="ingredients">
+      //         {ingredients.map((ingredient, i) => (
+      //           <li key={i}>{ingredient.name}</li>
+      //         ))}
+      //       </ul>
+      //       <section className="instructions">
+      //         <h2>Cooking Instructions</h2>
+      //         {steps.map((step, i) => (
+      //           <p key={i}>{step}</p>
+      //         ))}
+      //       </section>
+      //     </section>
+      // );
+      // ReactDOM.render(
+      //   <Menu recipes={data} title="Recipes" />,
+      //   document.getElementById("root")
+      // );
+    </script>
+  </body>
+</html>
