@@ -13,4 +13,5 @@ COPY ./recipes-app/package*.json ./
 RUN npm install
 
 WORKDIR /var/html
-CMD ["nodemon", "./bin/www"]
+
+CMD ["npm", "start"]
