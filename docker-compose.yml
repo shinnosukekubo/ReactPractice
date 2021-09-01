@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    web:
+        tty: true
+        build: ./nodejs
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./nodejs/recipes-app:/var/html
