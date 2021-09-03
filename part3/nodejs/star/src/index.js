@@ -1,6 +1,14 @@
-import React, { useState } from "react";
+import React, { createContext } from "react";
 import { render } from "react-dom";
-import { FaStar } from "react-icons/fa";
 import App from "./App";
+import ColorProvider from "./ColorProvider";
 
-render(<App />, document.getElementById("root"));
+render(
+    //同意義
+    // <ColorProvider>
+    //   <App />
+    // </ColorProvider>
+    <ColorProvider children={<App />}>
+    </ColorProvider>,
+    document.getElementById("root")
+);
